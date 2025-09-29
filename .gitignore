@@ -1,0 +1,38 @@
+# Node/Next.js
+node_modules/
+.next/
+.next/cache/
+.next/static/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/
+.vscode/
+*.swp
+
+# Build outputs
+out/
+dist/
+build/
+coverage/
+
+# Misc
+*.tsbuildinfo
+*.map
+*.pid
+
+# Images cache (Next Image Optimization)
+public/**/*.tmp
+
+# Local data/uploads (uncomment if you generate content locally)
+# public/uploads/
