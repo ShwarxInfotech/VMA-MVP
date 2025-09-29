@@ -15,7 +15,7 @@ export default function HomePage() {
     <div>
       {/* Hero */}
       <HeroBanner
-        title="Varachcha Medical Association (VMA)"
+        title="Varachha Medical Association (VMA)"
         subtitle="United for clinical excellence, continuous medical education, and community service."
         ctaText="Become a Member"
         ctaHref="/members"
