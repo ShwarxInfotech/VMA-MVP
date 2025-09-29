@@ -1,5 +1,7 @@
-import Image from "next/image";
-import SectionHeader from "./SectionHeader";
+"use client";
+
+import Image from 'next/image';
+import SectionHeader from './SectionHeader';
 
 interface PresidentMessageProps {
   message: string;
