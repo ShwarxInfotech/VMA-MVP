@@ -1,7 +1,7 @@
 export const presidentMessage = {
   name: 'Dr. Suresh Parmar',
   role: 'President, VMA',
-  photo: 'https://randomuser.me/api/portraits/men/70.jpg',
+  photo: '/images/32.jpg',
   message:
     'Dear colleagues, welcome to the Varachcha Medical Association. Together, we strive to advance clinical excellence, promote continuous medical education, and serve our communities with empathy and integrity. I invite you to participate in our CMEs, health camps, and member initiatives.'
 }

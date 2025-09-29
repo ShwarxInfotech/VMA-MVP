@@ -7,6 +7,7 @@ import { upcomingEvents } from "@/data/events";
 import { notices } from "@/data/notices";
 import { presidentMessage, partners, contactInfo } from "@/data/site";
 import PartnersMarquee from "@/components/PartnersMarquee";
+import PresidentMessage from "@/components/PresidentMessage";
 
 export default function HomePage() {
   const teaserList = upcomingEvents.slice(0, 3);
@@ -46,22 +47,12 @@ export default function HomePage() {
         <section className="lg:col-span-2">
           <SectionHeader title="President's Message" />
           <div className="bg-white rounded-lg shadow-sm border p-6">
-            <div className="flex gap-4">
-              <div className="relative w-20 h-20 rounded-full overflow-hidden ring-1 ring-gray-200">
-                <Image
-                  src={presidentMessage.photo}
-                  alt={presidentMessage.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">President's Message</h3>
-                <p className="text-sm text-gray-600">
-                  {presidentMessage.name} · {presidentMessage.role}
-                </p>
-              </div>
-            </div>
+            <PresidentMessage
+              name={presidentMessage.name}
+              title={presidentMessage.role}
+              message={presidentMessage.message}
+              image={presidentMessage.photo}
+            />
             <p className="mt-4 text-gray-700 leading-relaxed">
               {presidentMessage.message}
             </p>

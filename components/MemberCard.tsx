@@ -6,12 +6,12 @@ export default function MemberCard({ member }: { member: Member }) {
   const [imgSrc, setImgSrc] = useState(member.photo);
   const [imgError, setImgError] = useState(false);
 
-  // Fallback to a placeholder image if the image fails to load
+  // Fallback to local image if the image fails to load
   const handleImageError = () => {
     if (!imgError) {
       setImgError(true);
-      // Fallback to a placeholder image
-      setImgSrc(`https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=random&size=200`);
+      // Fallback to local image
+      setImgSrc('/images/32.jpg');
     }
   };
 
